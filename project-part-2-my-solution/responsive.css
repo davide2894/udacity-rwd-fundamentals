@@ -1,0 +1,35 @@
+@media screen and (max-width: 500px) {
+    .header__title {
+        font-size: 2em;
+        vertical-align: baseline;
+    }
+    .header__logo {
+        vertical-align: baseline;
+        height: 48px;
+    }
+    .header__menu {
+        font-size: 3em;
+        vertical-align: baseline;
+    }
+    .header {
+        max-height: 70px;
+    }
+    .header__link {
+        text-decoration: none;
+        color: #333;
+    }
+    nav {
+        position: absolute;
+        width: 300px;
+        -webkit-transform: translate(-300px, 0);
+        transform: translate(-300px, 0);
+        -webkit-transition: -webkit-transform 0.3s ease;
+        transition: -webkit-transform 0.3s ease;
+        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    }
+    nav.open {
+        -webkit-transform: translate(300px, 0);
+        transform: translate(300px, 0);
+    }
+}
