@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="responsive.css">
+    <script src="https://use.fontawesome.com/0a87e93f46.js"></script>
+    
 </head>
 
 <body>
@@ -20,7 +22,7 @@
                 The Brighton Times
             </h1>
             <a class="header__link" href="#">
-                <icon class="header__menu">&#9776;</icon>
+                <i class="fa fa-bars header__menu" aria-hidden="true"></i>
             </a>
         </div>
     </header>
@@ -188,9 +190,13 @@
 </body>
 
 <script>
-    var hamburger = $(".header__link");
-    var nav = $("#drawer");
-    var 
+    var main = document.querySelector("main");
+    var hamburger = document.querySelector(".header__menu");
+    var nav = document.querySelector("#drawer");
+    
+    hamburger.addEventListener("click", function(){
+       nav.classList.toggle("open"); 
+    })    
 
 </script>
 
