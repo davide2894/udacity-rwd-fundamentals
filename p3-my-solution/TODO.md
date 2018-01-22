@@ -1,0 +1,1 @@
+* make recent news responsive: fix snippets issue
